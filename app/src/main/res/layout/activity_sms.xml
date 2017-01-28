@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.wilis.bommassage.SMS">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Nomor penerima"
+        android:textColor="#fcc47a"
+        android:id="@+id/textview"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="11dp" />
+
+    <EditText
+        android:id="@+id/txtPhoneNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ecb368"
+        android:inputType="number"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/textview"
+        android:layout_alignLeft="@+id/textview"
+        android:layout_alignStart="@+id/textview"
+        style="@style/Widget.AppCompat.AutoCompleteTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#edb872"
+        android:text="Message"
+        android:id="@+id/textview2"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/txtPhoneNo"
+        android:layout_alignLeft="@+id/txtPhoneNo"
+        android:layout_alignStart="@+id/txtPhoneNo" />
+
+    <EditText
+        android:id="@+id/txtMessage"
+        android:layout_width="wrap_content"
+        android:textColor="#f4bf7a"
+        android:gravity="top"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textview2"
+        android:layout_alignLeft="@+id/textview2"
+        android:layout_alignStart="@+id/textview2"
+        android:layout_height="500px"
+        android:selectAllOnFocus="true"
+        style="@style/Widget.AppCompat.AutoCompleteTextView" />
+
+    <Button
+        android:id="@+id/btnSendSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:textColor="#ffffff"
+        android:background="#814610"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.Button" />
+
+
+</RelativeLayout>
